@@ -1,0 +1,112 @@
+<html>
+<head><font color="blue"><marquee>BUY FRESH ORGANIC GROCERY ITEMS AT FOODBAZAR</marquee></font></head>
+<style>
+#header {
+    background-color:green;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:5px;	 	 
+}
+</style>
+<body>
+<script type="text/javascript">
+function check(form)
+{
+int =0,b=0,c=0,d=0;
+if(form.ladyfinger.value==" ")
+{
+a=0;
+}
+else
+{
+a=form.ladyfinger.value;
+}
+if(form.potato.value==" ")
+{
+b=0;
+}
+else
+{
+b=form.potato.value;
+}
+if(form.carrot.value==" ")
+{
+c=0;
+}
+else
+{
+c=form.carrot.value;
+}
+if(form.goldencorn.value==" ")
+{
+d=0;
+}
+else
+{
+d=form.goldencorn.value;
+}
+alert("quantity of ladyfinger="+a+"\newquantity of potato="+b+"\newquantity of carrots="+c+"\newquantity of golden corn="+d);
+var result=a*100+b*40+c*30+d*50;
+var amount = document.getElementById('amount');
+amount.value=result;
+alert("total amount to be paid is"+result);
+}
+</script>
+<div id="header">
+<h1>FOODBAZAR</h1><p align=right>best online grocery store</P>
+<p align="left"><font size="6px"><a href="file:///C:/xampp/htdocs/segroceryproject/new1.html"><b>Home</b></a></p></font>
+
+</div>
+<nav>
+<a href="http://localhost:1234/segroceryproject/buy1.html"><b>Drinks and Snacks</b></a>
+&nbsp&nbsp&nbsp&nbsp
+<a href="http://localhost:1234/segroceryproject/buy3.html"><b>Dairy products</b></a> 
+&nbsp&nbsp&nbsp&nbsp
+<a href="http://localhost:1234/segroceryproject/buy4.html"><b>Meat</b></a>
+</nav>
+<form  method="post" action="connect1.php" onsubmit="return check(this);">
+<font color="red">user is requested to login with their accounts to buy grocery items from our site during payment</font>
+<div id="section" align="left">
+<h2>VEGETABLES</h2>
+<font font size="4px">
+<table border="1" cellspacing="0" width="1200" bordercolor="#000000" cellpadding="0">
+<tr>
+<td>
+<img src="http://localhost:1234/segroceryproject/v1.png"></img> 
+<figcaption>ladyfinger</figcaption>
+<input type="text" name="ladyfinger"  id="txt1" value="">1kg ladyfinger price is @rs 100</input>
+</td>
+<td>
+<img src="http://localhost:1234/segroceryproject/v2.png"></img> 
+<figcaption>potato</figcaption>
+<input type="text" name="potato"  id="txt2" value="">1kg potato price is @rs 40</input>
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://localhost:1234/segroceryproject/veg1.png"></img> 
+<figcaption>carrots</figcaption>
+<input type="text" name="carrot"  id="txt3" value="">1kg carrots price is @rs 30</input>
+</td>
+<td>
+<img src="http://localhost:1234/segroceryproject/veg2.png"></img> 
+<figcaption>golden corn</figcaption>
+<input type="text" name="goldencorn"  id="txt4" value="">1bundel(includes 12 golden corns) of golden corn price is @rs 50</input>
+</td>
+</tr>
+</table>
+<br>
+</div>
+<input type="text" name="amount" id="amount" value="">Total Amount</input>
+<input type="submit" value="calulate total">total amount to be paid</input>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="reset" name="edit">edit the number of quantities</input>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://localhost:1234/segroceryproject/payment.html"><input type="button" value="checkout"></input></a>
+</font>
+</form>
+</body>
+</html>

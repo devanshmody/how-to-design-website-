@@ -1,0 +1,111 @@
+<html>
+<head><font color="rainbow"><marquee>BUY FRESH ORGANIC GROCERY ITEMS AT FOODBAZAR</marquee></font></head>
+<style>
+#header {
+    background-color:green;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:5px;	 	 
+}
+</style>
+<body>
+<script language="javascript" type="text/javascript">
+function check(form)
+{
+int =0,b=0,c=0,d=0;
+if(form.eggs.value==" ")
+{
+a=0;
+}
+else
+{
+a=form.eggs.value;
+}
+if(form.milk.value==" ")
+{
+b=0;
+}
+else
+{
+b=form.milk.value;
+}
+if(form.butter.value==" ")
+{
+c=0;
+}
+else
+{
+c=form.butter.value;
+}
+if(form.ghee.value==" ")
+{
+d=0;
+}
+else
+{
+d=form.ghee.value;
+}
+alert("quantity of eggs="+a+"\newquantity of milk="+b+"\newquantity of butter="+c+"\newquantity of ghee="+d);
+var result=a*150+b*50+c*45+d*1500;
+var amount = document.getElementById('amount');
+amount.value=result;
+alert("total amount to be paid is"+result);
+}
+</script>
+<div id="header">
+<h1>FOODBAZAR</h1><p align=right>best online grocery store</P>
+<p align=left><font size="6px"><a href="file:///C:/xampp/htdocs/segroceryproject/new1.html">home</a></font></p>
+</div>
+<nav>
+<a href="http://localhost:1234/segroceryproject/buy1.html"><b>Drinks and Snacks</b></a>
+&nbsp&nbsp&nbsp&nbsp
+<a href="http://localhost:1234/segroceryproject/buy.html"><b>Vegetables</b></a> 
+&nbsp&nbsp&nbsp&nbsp
+<a href="http://localhost:1234/segroceryproject/buy4.html"><b>Meat</b></a>
+</nav>
+<form method="post" action="connect3.php" onsubmit="return check(this);">
+<font color="red">user is requested to login with their accounts to buy grocery items from our site during payment</font>
+<div id="section" align="left">
+<h2>DAIRY PRODUCTS</h2>
+<font font size="4px">
+<table border="1" cellspacing="0" width="1200" bordercolor="#000000" cellpadding="0">
+<tr>
+<td>
+<img src="http://localhost:1234/segroceryproject/da1.png"></img> 
+<figcaption>Eggs</figcaption>
+<input type="text" name="eggs"  id="txt1" value="">1 carete of eggs price is @rs 150</input>
+</td>
+<td>
+<img src="http://localhost:1234/segroceryproject/da2.png"></img> 
+<figcaption>Milk</figcaption>
+<input type="text" name="milk"  id="txt2" value="">1 litre of milk pirce is @rs 50</input>
+</td>
+</tr>
+<tr>
+<td>
+<img src="http://localhost:1234/segroceryproject/d4.png"></img> 
+<figcaption>Butter</figcaption>
+<input type="text" name="butter"  id="txt3" value="">butter price is @rs 45</input>
+</td>
+<td>
+<img src="http://localhost:1234/segroceryproject/d5.png"></img> 
+<figcaption>Ghee</figcaption>
+<input type="text" name="ghee"  id="txt4" value="">1 kg of Ghee price is @rs 1500</input>
+</td>
+</tr>
+</table>
+<br>
+</div>
+<input type="text" name="amount" id="amount" value="">Total Amount</input>
+<input type="submit" value="calulate total">total amount to be paid</input>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="reset" name="edit">edit the number of quantities</input>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://localhost:1234/segroceryproject/payment.html"><input type="button" value="checkout"></input></a>
+</font>
+</form>
+</body>
+</html>
