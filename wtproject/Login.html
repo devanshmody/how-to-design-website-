@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<style>
+         body  {
+	background-image: C:\Users\dell\Pictures\Picasa\Collages\2.jpg;
+	background-attachment: fixed;
+                     background-size:  1000px 700px; 
+         }
+</style>
+<script type="text/javascript">
+
+  function checkForm(form)
+  {
+    if(form.username.value == "" && form.pwd1.value == "")
+	{
+		alert("Error: Username & Password cannot be blank!");
+		return false;
+	}
+	
+	if(form.username.value == "")
+	{
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+	
+	if(form.pwd1.value == "")
+	{
+      alert("Error: Password cannot be blank!");
+      form.pwd1.focus();
+      return false;
+    }
+if(form.pwd1.value<8)
+{
+alert("Error: password must be upto 8 digits!");
+form.pwd1.focus();
+return false();
+}	
+    if(form.pwd1.value == form.username.value)
+	{
+      alert("Error: Password must be different from Username!");
+      form.pwd1.focus();
+      return false;
+    }
+ alert("Login Successful");
+  }
+
+</script>
+<title>Login Page</title>
+</head>
+<body background="C:\Users\dell\Pictures\Picasa\Collages\2.jpg">
+<center><h1>Login</h1>
+<form onsubmit="return checkForm(this);">
+<p><b>Username:-</b> <input type="text" name="username"></p><br>
+<p><b>Password:-</b> <input type="password" name="pwd1"></p><br>
+<p><input type="submit">&nbsp&nbsp<input type="Reset"> </p>
+<br>
+<a href="file:///C:/Users/dell/Desktop/wtproject/p4.html"><font size="10px" color="#005000">go to homepage</font></a>
+<p><b>click on above link to go to the homepage</b></P>
+</form></center>
+</body>
+
+</html>

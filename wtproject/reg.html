@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration Page</title>
+</head>
+<center><h1>Registration</h1></center>
+<body>
+<script type="text/javascript">
+function checkForm(form)
+ {
+    if(form.username.value == "")
+	{
+      alert("Error: Name cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+	
+	if(form.email.value == "")
+	{
+      alert("Error: Email cannot be blank!");
+      form.email.focus();
+      return false;
+    }
+	var p =form.email.value.indexOf("@");
+if(p<1)
+{
+alert("Error: Invalid");
+form.email.focus();
+return false;
+}
+var p =form.email.value.indexOf(".");
+if(p<2)
+{
+alert("Error: Invalid Emai!l");
+form.email.focus();
+return false;
+}	
+
+	
+	if(form.pass1.value == "")
+	{
+      alert("Error: Password cannot be blank!");
+      form.pass1.focus();
+      return false;
+    }
+	
+	if(form.pass1.value.length<8)
+{
+alert("Error:Password must be of 8 digits!");
+form.pass1.focus();
+return false;
+}
+	
+	if(form.pass2.value!=form.pass1.value)
+	{
+      alert("Error: Please re-enter your password!");
+      form.pass2.focus();
+      return false;
+	}
+	
+
+	if(form.licnum.value == "")
+	{
+      alert("Error: Enter your License No.!");
+      form.licnum.focus();
+      return false;
+	}
+	if(form.licnum.value<10)
+{
+alert("Error: license number must be of 10 digits!");
+form.licnum.focus();
+return false;
+}
+	
+	if(form.add.value == "")
+	{
+      alert("Error: Enter your address!");
+      form.add.focus();
+      return false;
+	}
+ }	
+</script>
+
+<form onsubmit="return checkForm(this);">
+<form action="formdb.php" method="post">
+
+<div align="center">
+<p>Name: <br> <input type="text" name="username"></p>
+<p>Email: <br> <input type="email" name="email" id="p"></p>
+<p>Password: <br> <input type="password" name="pass1" value="" id=""></p>
+<p>Confirm Password: <br> <input type="password" name="pass2"></p>
+<p>License No: <br> <input type="text" name="licnum"></p>
+<p>Date of Birth: <br> <input type="date" name="dob"></p>
+<p>Gender: <br> <input type="radio" name="sex" value="male">Male 
+				<input type="radio" name="sex" value="female">Female</p>
+<p>Address: <br> <textarea rows="4" cols="50" name="add"></textarea></p>
+<p>Phone No.: <br> <input type="tel" name="tel"></p>
+<p>Country:<br> <select name="country">
+                     <option value="0" selected>choose yours</option>
+                     <option value="1">USA</option>
+                     <option value="2">UK</option>
+                     <option value="3">INDIA</option>
+	     <option value="4">GERMANY</option>
+	    <option value="5">ENGLAND</option>
+                  </select>
+				  </p>
+<p>State:<br><input type="text" name="state"></p>
+<p><input type="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Reset"></p>
+</div>
+</form>
+</body>
+</html>

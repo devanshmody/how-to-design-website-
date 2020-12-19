@@ -1,0 +1,69 @@
+<html>
+<head><tittle font face="arial" size="20px"><center>Hand Greanade</center></tittle>
+<script language="javascript">
+function f()
+{
+var a,b,c,total,d=50000,e=20000,f=40000;
+a=prompt("enter quantity for RG-6 Grenade laucher weapon=","");
+if(a>3)
+{
+alert("invalid");
+return("false");
+}
+b=prompt("enter quantity for Benelli 828U O/U Shotgun PREORDER 10701 weapon=","");
+if(b>3)
+{
+alert("invalid");
+return("false");
+}
+c=prompt("enter quantity for Benelli 828U O/U Shotgun PREORDER 10701 weapon=","");
+if(c>3)
+{
+alert("invalid");
+return("false");
+}
+total=(a*d)+(b*e)+(c*f);
+alert("total price is:-"+total);
+}
+</script>
+</head>
+<body>
+<p><font size="4px">1:RG-6 Grenade laucher </font>
+<br>
+<img src="C:\Users\dell\Desktop\wtproject\g1.jpg" width="200px" height="100px">
+<br>
+<font size="4px">Features:-</font>
+<ul>
+<li>Weight	6.2 kg </li>
+<li>Length	 690 mm  stock extended / 520 mm  stock folded</li>
+<li>Width	145 mm</li>
+<li>Height	280 mm  in combat / 200 mm  in travelling</li>
+<li>cartridge 40 mm VOG-25</li>
+<li>Action Double action</li>
+<li>Rate of fire 2 rounds/sec</li>
+<li>16-18 rounds/min</li>
+<li>Muzzle velocity 76.5 m/s</li>
+<li>Maximum firing range 400 m</li>
+<li>Feed system 6-Round, Revolving, Swing Out-Type Cylinder</li>
+<li>Sights folded, ladder-type rear sight</li>
+<font size="4px">price:-</font>&nbsp100000
+</p>
+<br>
+<p><font size="4px">2:-Benelli 828U O/U Shotgun PREORDER 10701</font>
+<br>
+<img src="C:\Users\dell\Desktop\wtproject\s1.jpg" width="200px" height="100px">
+<br>
+<font size="4px">Description:-</font>
+<ul>
+<li>Ultra-high-velocity steel</li>
+<li>Advanced powders and PrecisionSteel components</li>
+<li>250 shells per case</li>
+</ul>
+Ultra-high-velocity shotshells that virtually eliminate steel's down-range shortcomings. Advanced powders and PrecisionSteel™ components achieve the efficiency serious waterfowlers demand. Kent offers many 2-3/4" and 3" options in the 1,560-fps range for duck- and goose-smacking energy and jaw-dropping long-range capabilities.
+<br>
+<font size="4px">price:-</font>&nbsp50,000
+</p>
+<br>
+confirm order:-<input type="button" onclick="f()" value="Book">
+</body>
+</html>
